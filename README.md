@@ -8,3 +8,8 @@ A tiny note; You cannot simply add a "camera follow' script and then set your Un
 4) Add CameraPlatform.cs to the "CameraPlatform"
 5) Set the object you want the camera to follow in the Target field.
 6) Adjust the "Smooth Speed" and "Rotation Damping" to your needs.
+
+
+Note: I only gathered these functions and information together.   A number of YouTube, Unity Forum and Stackoverflow posts were gathered into a single codebase to give a simple and smooth example.
+
+Notice that in the "Startup" function that there is a check for the "Target" object, and if it is not found it throws an error.   This is to avoid checking for a null value in "LastUpdate" over and over and over...   Small performace update, but every tiny bit can help.
